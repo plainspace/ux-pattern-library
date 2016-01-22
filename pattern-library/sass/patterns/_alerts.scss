@@ -1,0 +1,99 @@
+// ------------------------------
+// edX Pattern Library: Components - Alerts
+//
+// About: Contains base styling for alerts.
+// ----------------------------
+
+// ----------------------------
+// #SETTINGS
+// ----------------------------
+@mixin alert-base($alert-color) {
+    border-top: rem(4) solid $alert-color;
+    .alert-icon {
+        color: palette(grayscale, white);
+        background-color: $alert-color;
+    }
+}
+
+// ----------------------------
+// #GENERAL
+// ----------------------------
+.alert {
+    border: rem(1) solid palette(grayscale-cool, light);
+    border-radius: rem(3);
+    padding: spacing-vertical(small) spacing-horizontal(base);
+    overflow: auto;
+}
+
+.alert-icon {
+    // create a circle around the icon
+    border-radius: 50%;
+
+    // create room around the icon for the circle
+    padding: rem(7);
+
+    @include susy-media($bp-screen-md) {
+        float: left;
+    }
+
+}
+
+.alert-message {
+    padding: spacing-vertical(small);
+    padding-left: 0;
+    padding-right: 0;
+
+    @include susy-media($bp-screen-md) {
+        float: left;
+        width: 70%;
+        padding: spacing-vertical(small);
+        padding-top: 0;
+        padding-bottom: 0;
+
+        // shift the message down to be in line with the icon
+        margin-top: rem(3);
+    }
+}
+
+.alert-title {
+    @extend %hd-6;
+    @extend %headings-emphasized;
+}
+
+.alert-copy {
+    @extend %copy-meta;
+
+    > * {
+        @extend %clear-last-child;
+    }
+}
+
+.alert-action {
+    @include susy-media($bp-screen-md) {
+        float: right;
+    }
+}
+
+// ----------------------------
+// #INDIVIDUAL CASES
+// ----------------------------
+
+// information-based alert
+.alert-information {
+    @include alert-base(palette(information, base));
+}
+
+// warning-based alert
+.alert-warning {
+    @include alert-base(palette(warning, base));
+}
+
+// error-based alert
+.alert-error {
+    @include alert-base(palette(error, base));
+}
+
+// success-based alert
+.alert-success {
+    @include alert-base(palette(success, base));
+}

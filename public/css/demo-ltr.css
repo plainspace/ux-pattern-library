@@ -77,7 +77,7 @@
   display: table;
 }
 
-.list-divided .item:last-child, ul .item:last-child, .list-bulleted .item:last-child, ol .item:last-child, .list-ordered .item:last-child, .list-inline .item:last-child, .list-grouped .item:last-child, .list .item:last-child, .list li:last-child, ol li:last-child, ul li:last-child, .list-divided:last-child, ul:last-child, .list-bulleted:last-child, ol:last-child, .list-ordered:last-child, .list-inline:last-child, .list-grouped:last-child, .list:last-child, .list-divided .item-complex:last-child, ul .item-complex:last-child, .list-bulleted .item-complex:last-child, ol .item-complex:last-child, .list-ordered .item-complex:last-child, .list-inline .item-complex:last-child, .list-grouped .item-complex:last-child, .list .item-complex:last-child {
+.list-divided .item:last-child, ul .item:last-child, .list-bulleted .item:last-child, ol .item:last-child, .list-ordered .item:last-child, .list-inline .item:last-child, .list-grouped .item:last-child, .list .item:last-child, .list li:last-child, ol li:last-child, ul li:last-child, .list-divided:last-child, ul:last-child, .list-bulleted:last-child, ol:last-child, .list-ordered:last-child, .list-inline:last-child, .list-grouped:last-child, .list:last-child, .list-divided .item-complex:last-child, ul .item-complex:last-child, .list-bulleted .item-complex:last-child, ol .item-complex:last-child, .list-ordered .item-complex:last-child, .list-inline .item-complex:last-child, .list-grouped .item-complex:last-child, .list .item-complex:last-child, .alert-copy > :last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
@@ -123,7 +123,7 @@
   display: inline-block;
 }
 
-.copy-lead a, .copy-large a, .copy-base a, .copy-meta a, .copy-micro a, a,
+.copy-lead a, .copy-large a, .copy-base a, .copy-meta a, .alert-copy a, .copy-micro a, a,
 .link, .btn-link {
   -webkit-transition: color 0.125s ease-in-out 0s;
   transition: color 0.125s ease-in-out 0s;
@@ -152,13 +152,13 @@ a:active,
   color: #065683;
 }
 
-.copy-lead a, .copy-large a, .copy-base a, .copy-meta a, .copy-micro a {
+.copy-lead a, .copy-large a, .copy-base a, .copy-meta a, .alert-copy a, .copy-micro a {
   -webkit-transition: box-shadow 0.125s ease-in-out 0s;
   transition: box-shadow 0.125s ease-in-out 0s;
   box-shadow: 0 1px 0 0 transparent;
 }
 
-.copy-lead a:hover, .copy-large a:hover, .copy-base a:hover, .copy-meta a:hover, .copy-micro a:hover, .copy-lead a:active, .copy-large a:active, .copy-base a:active, .copy-meta a:active, .copy-micro a:active, .copy-lead a:focus, .copy-large a:focus, .copy-base a:focus, .copy-meta a:focus, .copy-micro a:focus {
+.copy-lead a:hover, .copy-large a:hover, .copy-base a:hover, .copy-meta a:hover, .alert-copy a:hover, .copy-micro a:hover, .copy-lead a:active, .copy-large a:active, .copy-base a:active, .copy-meta a:active, .alert-copy a:active, .copy-micro a:active, .copy-lead a:focus, .copy-large a:focus, .copy-base a:focus, .copy-meta a:focus, .alert-copy a:focus, .copy-micro a:focus {
   box-shadow: 0 1px 0 0 #0ea6ec;
 }
 
@@ -882,7 +882,7 @@ h1, h2, h3, h4, h5, h6, .hd-1,
 .hd-3.emphasized,
 .hd-4.emphasized,
 .hd-5.emphasized,
-.hd-6.emphasized {
+.hd-6.emphasized, .alert-title {
   color: black;
   font-weight: 600;
 }
@@ -931,14 +931,14 @@ h1, h2, h3, h4, h5, h6, .hd-1,
   line-height: 1.6;
 }
 
-.hd-6 {
+.hd-6, .alert-title {
   margin-bottom: 0.3125rem;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.6;
 }
 
-.emphasized.hd-6 {
+.emphasized.hd-6, .emphasized.alert-title {
   font-weight: 700;
 }
 
@@ -968,17 +968,17 @@ h1, h2, h3, h4, h5, h6, .hd-1,
   font-weight: 700;
 }
 
-.emphasized.copy-lead, .emphasized.copy-large, .emphasized.copy-base, .emphasized.copy-meta, .emphasized.copy-micro {
+.emphasized.copy-lead, .emphasized.copy-large, .emphasized.copy-base, .emphasized.copy-meta, .emphasized.alert-copy, .emphasized.copy-micro {
   color: black;
   font-weight: 400;
 }
 
-.de-emphasized.copy-lead, .de-emphasized.copy-large, .de-emphasized.copy-base, .de-emphasized.copy-meta, .de-emphasized.copy-micro {
+.de-emphasized.copy-lead, .de-emphasized.copy-large, .de-emphasized.copy-base, .de-emphasized.copy-meta, .de-emphasized.alert-copy, .de-emphasized.copy-micro {
   color: #6b6969;
   font-weight: 400;
 }
 
-.copy-lead, .copy-large, .copy-base, .copy-meta, .copy-micro {
+.copy-lead, .copy-large, .copy-base, .copy-meta, .alert-copy, .copy-micro {
   color: #4d4b4b;
 }
 
@@ -1009,12 +1009,12 @@ h1, h2, h3, h4, h5, h6, .hd-1,
   margin-bottom: 1.25rem;
 }
 
-.copy-meta {
+.copy-meta, .alert-copy {
   font-size: 0.875rem;
   line-height: 1.6;
 }
 
-.copy-meta p, .copy-meta ol, .copy-meta ul, .copy-meta dl {
+.copy-meta p, .alert-copy p, .copy-meta ol, .alert-copy ol, .copy-meta ul, .alert-copy ul, .copy-meta dl, .alert-copy dl {
   margin-bottom: 1.25rem;
 }
 
@@ -8626,6 +8626,83 @@ Note: sure .FONT_NAME comes first for adjoining classes bug in IE7.
 
 .icon-fallback-img .icon-cc {
   background: url("../fonts/edx-icons/fallback-img/cc.svg") center center no-repeat;
+}
+
+.alert {
+  border: 0.0625rem solid #cdd7db;
+  border-radius: 0.1875rem;
+  padding: 1.25rem 1.25rem;
+  overflow: auto;
+}
+
+.alert-icon {
+  border-radius: 50%;
+  padding: 0.4375rem;
+}
+
+@media (min-width: 768px) {
+  .alert-icon {
+    float: left;
+  }
+}
+
+.alert-message {
+  padding: 1.25rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .alert-message {
+    float: left;
+    width: 70%;
+    padding: 1.25rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0.1875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .alert-action {
+    float: right;
+  }
+}
+
+.alert-information {
+  border-top: 0.25rem solid #6fa0ba;
+}
+
+.alert-information .alert-icon {
+  color: #fcfcfc;
+  background-color: #6fa0ba;
+}
+
+.alert-warning {
+  border-top: 0.25rem solid #fdbc56;
+}
+
+.alert-warning .alert-icon {
+  color: #fcfcfc;
+  background-color: #fdbc56;
+}
+
+.alert-error {
+  border-top: 0.25rem solid #b20610;
+}
+
+.alert-error .alert-icon {
+  color: #fcfcfc;
+  background-color: #b20610;
+}
+
+.alert-success {
+  border-top: 0.25rem solid #25b85a;
+}
+
+.alert-success .alert-icon {
+  color: #fcfcfc;
+  background-color: #25b85a;
 }
 
 /*# sourceMappingURL=demo-ltr.css.map */

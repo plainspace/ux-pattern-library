@@ -5,6 +5,11 @@ Nothing yet
 
 - - -
 
+## 0.9.0 (2016-01-28)
+* Added alerts pattern
+
+- - -
+
 ## 0.8.12 (2016-01-26)
 * FIX- Removed unused %btn-base extend from buttons
 

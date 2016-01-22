@@ -388,7 +388,7 @@
   display: table;
 }
 
-.list-divided .item:last-child, ul .item:last-child, .list-bulleted .item:last-child, ol .item:last-child, .list-ordered .item:last-child, .list-inline .item:last-child, .list-grouped .item:last-child, .list .item:last-child, .list li:last-child, ol li:last-child, ul li:last-child, .list-divided:last-child, ul:last-child, .list-bulleted:last-child, ol:last-child, .list-ordered:last-child, .list-inline:last-child, .list-grouped:last-child, .list:last-child, .list-divided .item-complex:last-child, ul .item-complex:last-child, .list-bulleted .item-complex:last-child, ol .item-complex:last-child, .list-ordered .item-complex:last-child, .list-inline .item-complex:last-child, .list-grouped .item-complex:last-child, .list .item-complex:last-child, .example-set:last-child, .alert-copy > :last-child {
+.list-divided .item:last-child, ul .item:last-child, .list-bulleted .item:last-child, ol .item:last-child, .list-ordered .item:last-child, .list-inline .item:last-child, .list-grouped .item:last-child, .list .item:last-child, .list li:last-child, ol li:last-child, ul li:last-child, .list-divided:last-child, ul:last-child, .list-bulleted:last-child, ol:last-child, .list-ordered:last-child, .list-inline:last-child, .list-grouped:last-child, .list:last-child, .list-divided .item-complex:last-child, ul .item-complex:last-child, .list-bulleted .item-complex:last-child, ol .item-complex:last-child, .list-ordered .item-complex:last-child, .list-inline .item-complex:last-child, .list-grouped .item-complex:last-child, .list .item-complex:last-child, .alert-copy > :last-child, .example-set:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
@@ -8960,6 +8960,83 @@ Note: sure .FONT_NAME comes first for adjoining classes bug in IE7.
   background: url("../fonts/edx-icons/fallback-img/cc.svg") center center no-repeat;
 }
 
+.alert {
+  border: 0.0625rem solid #cdd7db;
+  border-radius: 0.1875rem;
+  padding: 1.25rem 1.25rem;
+  overflow: auto;
+}
+
+.alert-icon {
+  border-radius: 50%;
+  padding: 0.4375rem;
+}
+
+@media (min-width: 768px) {
+  .alert-icon {
+    float: left;
+  }
+}
+
+.alert-message {
+  padding: 1.25rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .alert-message {
+    float: left;
+    width: 70%;
+    padding: 1.25rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0.1875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .alert-action {
+    float: right;
+  }
+}
+
+.alert-information {
+  border-top: 0.25rem solid #6fa0ba;
+}
+
+.alert-information .alert-icon {
+  color: #fcfcfc;
+  background-color: #6fa0ba;
+}
+
+.alert-warning {
+  border-top: 0.25rem solid #fdbc56;
+}
+
+.alert-warning .alert-icon {
+  color: #fcfcfc;
+  background-color: #fdbc56;
+}
+
+.alert-error {
+  border-top: 0.25rem solid #b20610;
+}
+
+.alert-error .alert-icon {
+  color: #fcfcfc;
+  background-color: #b20610;
+}
+
+.alert-success {
+  border-top: 0.25rem solid #25b85a;
+}
+
+.alert-success .alert-icon {
+  color: #fcfcfc;
+  background-color: #25b85a;
+}
+
 html, body {
   height: 100%;
   color: #4d4b4b;
@@ -8989,37 +9066,6 @@ html, body {
   display: inline-block;
   white-space: nowrap;
   font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
-}
-
-.wrapper-alert {
-  margin-bottom: 0.625rem;
-}
-
-.alert {
-  border-left: 0.25rem solid #cdd7db;
-  border-radius: 0.1875rem;
-  padding: 1.25rem 1.25rem;
-  background-color: #e7e6e6;
-}
-
-.alert-information {
-  border-color: #6fa0ba;
-}
-
-.alert-warning {
-  border-color: #fdbc56;
-}
-
-.alert-error {
-  border-color: #b20610;
-}
-
-.alert-success {
-  border-color: #25b85a;
-}
-
-.alert-ui-toolkit {
-  border-color: #ffde20;
 }
 
 .badge {
